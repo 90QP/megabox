@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+.container {
+  background-color: #2C292F;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.frontTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:1.2;
+}
+
+.frontBtm {
+  background-color: #fff;
+  border-radius: 20px 20px 0 0;
+  bottom:0;
+  flex:8;
+  position: relative;
+}
+
+.center {
+  text-align: center;
+}
+
+.frontBtm_wrap {
+  padding:0 30px;
+}
+.frontBtm_wrap h3 {
+  margin: 30px 0;
+}
+h4 {
+  margin:30px 0 12px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.frontBtm p {
+  margin-bottom: 28px;
+}
+
+input {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+form {
+  width:90%;
+  margin:auto
+}
+
+input[type="text"],input[type="password"] {
+  width:100%;
+  outline: none;
+  border: none;
+  border-bottom:1px solid #d9d9d9;
+  padding:10px 2px;
+  font-size:16px;
+  margin-bottom: 10px;
+}
+
+input::placeholder {
+  color:#C9C5CC;
+  letter-spacing: -0.75px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size:15px;
+  font-weight: 300;
+}
+.btn1 {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  padding:5px 10px;
+  border-radius: 5px;
+  font-size:12px;
+  cursor: pointer;
+}
+
+p {
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.25px;
+    font-weight: 400;
+}
+
+input[type="submit"] {
+  width: 300px;
+  height: 50px;
+  border: none;
+  background-color: #5B35C5;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color:#fff;
+  font-weight: 700;
+  border-radius: 10px;
+  margin:39px 0 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+.frontBtm_wrap span {
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 14px;
+}
+.frontBtm_wrap span:after {
+  display: inline-block;
+  content:"|";
+  margin-left:10px;
+}
+.frontBtm_wrap span:last-child:after {
+  content:"";
+}
+.hr10px {
+  margin-top:42px;
+}
+
+.checklabel {
+  padding:2px 30px;
+  background: no-repeat left / contain;
+  background-image: url('../img/checkbox.png') ;
+  display: block;
+  margin-top: 16px;
+  text-align: left;
+}
+
+input[type="checkbox"]:checked + label.checklabel {
+  background-image: url('../img/checkbox1.png');
+}
+
+.btnWrap {
+  width:500px;
+  margin:auto;
+  text-align: center;
+}

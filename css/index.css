@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+.container {
+  background-color: #2C292F;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.frontTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:7
+}
+
+.frontBtm {
+  background-color: #fff;
+  border-radius: 20px 20px 0 0;
+  padding:30px;
+  bottom:0;
+  flex:3.5;
+  position: relative;
+}
+
+.infoBubble {
+  width: 200px;
+  height: 130px;
+  background: url('../img/Frame18.png') center / contain no-repeat;
+  text-align: center;
+  padding-top:30px;
+  position: absolute;
+  top:-110px;
+  right: 14px;
+}
+
+.btnWrap {
+  text-align: center;
+  margin-top:20px;
+}

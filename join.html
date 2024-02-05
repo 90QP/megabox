@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/join.css">
+  <script src="js/main.js" defer></script>
+  <title>M E G A B O X</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="frontTop">
+      <img src="img/logo-white_new2.png" alt="메가박스 로고">
+    </div>
+
+    <div class="frontBtm">
+      <div class="frontBtm_wrap">
+        <a href="index.html" class="closeBtn"></a>
+        <h3>메가박스 회원가입</h3>
+        <p class="contentP1 gray5">가입을 위한 정보를 입력해 주세요.</p>
+        <form action="login.html" id="join">
+          <input type="text" placeholder="아이디,영문,숫자 조합(8~12자)"><button class="btn1 idbtn gray5">중복확인</button>
+          <input type="password" placeholder="비밀번호, 영문, 숫자, 특수기호 중 2가지 이상 조합">
+          <input type="password" placeholder="비밀번호 확인">
+          <input type="text" placeholder="이메일 주소를 입력해 주세요">
+        </form>
+      </div>
+      <hr class="hr10px">
+      <div class="frontBtm_wrap">
+        <form action="login.html" id="join">
+          <input type="text" placeholder="이름">
+          <div class="idbtn"><input type="radio" name="from" id="sea"  checked="checked">
+          <label for="sea" class="radioLeft">내국인</label>
+          <input type="radio" name="from" id="korean"><label for="korean" class="radioRight">외국인</label></div>
+          <input type="text" placeholder="생년월일 8자리">
+          <div class="idbtn">
+            <input type="radio" name="gender"  id="male"  checked="checked"><label for="male" class="radioLeft" >남자</label>
+          <input type="radio" name="gender"  id="female"><label for="female" class="radioRight">여자</label>
+          </div>
+          
+          <input type="text" placeholder="통신사 선택">
+          <button class="btn2 idbtn"></button>
+          <input type="text" placeholder="휴대폰 번호 ‘-’ 없이 입력">
+          <button class="btn1 idbtn gray5">인증요청</button>
+          <input type="checkbox" id="hitshuyo">
+          <label for="hitshuyo" class="checklabel"><span>(필수) 본인 인증 약관 전체 동의<button class="btn2 checkbtn"></button></span></label>
+          <input type="checkbox" id="sentaku">
+          <label for="sentaku" class="checklabel"><span>(선택) 마케팅 개인정보 수집 이용 안내<button class="btn2 checkbtn"></button></span></label>
+        </form>
+      </div>
+      <hr class="hr10px">
+      <input type="submit" value="회원가입" form="join">
+    </div>
+  </div>
+</body>
+
+</html>

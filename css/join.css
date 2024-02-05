@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+.container {
+  background-color: #2C292F;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.frontTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:1.2;
+}
+
+.frontBtm {
+  background-color: #fff;
+  border-radius: 20px 20px 0 0;
+  bottom:0;
+  flex:8;
+  position: relative;
+}
+
+.frontBtm_wrap {
+  padding:0 30px;
+}
+.frontBtm_wrap h3 {
+  margin-top: 30px;
+}
+
+.frontBtm p {
+  margin-bottom: 28px;
+}
+
+input {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+input[type="text"],input[type="password"] {
+  width:100%;
+  outline: none;
+  border: none;
+  border-bottom:1px solid #d9d9d9;
+  padding:10px 2px;
+  font-size:14px;
+  margin-bottom: 10px;
+}
+
+
+
+input::placeholder {
+  color:#C9C5CC;
+  letter-spacing: -0.75px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size:14px;
+  font-weight: 300;
+}
+.btn1 {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  padding:5px 10px;
+  border-radius: 5px;
+  font-size:12px;
+  cursor: pointer;
+}
+
+.btn2 {
+  background-color: transparent;
+  border:none;
+  width: 22px;
+  height: 22px;
+  background: url('../img/arrow-up.png')no-repeat left / contain;
+  cursor: pointer;
+}
+
+.checkbtn {
+  position: absolute;
+  right:30px;
+}
+
+.idbtn {
+  position: absolute;
+  right:30px;
+  transform: translateY(-45px);
+}
+
+input[type="radio"] {
+  display: none;
+  margin: 0;
+}
+
+input[type="radio"]:checked + label {
+  border:1px solid #111;
+  color:#111;
+}
+
+.radioLeft {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  padding:7px 10px;
+  border-radius: 5px 0 0 5px;
+  font-size:13px;
+  color:#b7b7b7;
+  cursor: pointer;
+  margin-right: -4px;
+}
+.radioRight {
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  padding:7px 10px;
+  border-radius: 0 5px 5px 0;
+  font-size:13px;
+  color:#b7b7b7;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  height: 60px;
+  border: none;
+  background-color: #E9E9E9;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.checklabel {
+  padding:2px 30px;
+  background: no-repeat left / contain;
+  background-image: url('../img/checkbox.png') ;
+  display: block;
+  margin-top: 16px;
+}
+
+input[type="checkbox"]:checked + label.checklabel {
+  background-image: url('../img/checkbox1.png');
+}
