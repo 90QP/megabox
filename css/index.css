@@ -25,14 +25,14 @@
 }
 
 .infoBubble {
-  width: 200px;
-  height: 130px;
+  width: 150px;
+  height: 110px;
   background: url('../img/Frame18.png') center / contain no-repeat;
   text-align: center;
   padding-top:30px;
   position: absolute;
-  top:-110px;
-  right: 14px;
+  top:-90px;
+  right: 20px;
 }
 
 .btnWrap {
