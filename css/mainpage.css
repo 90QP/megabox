@@ -13,7 +13,8 @@ header {
 }
 
 .container {
-  background-color: #2C292F;
+  background-color: #fff;
+  overflow: hidden;
 }
 
 .ticketInfo {
@@ -59,7 +60,7 @@ header img {
 }
 
 nav {
-  height: 80px;
+  height: 70px;
   background-color: #fff;
   position: fixed;
   bottom:0;
@@ -68,28 +69,31 @@ nav {
   min-width: 300px;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
   z-index:2;
+  font-size:12px
 }
 
 .circle {
   background-color: #5B35C5;
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   color:#fff;
   font-weight: 700;
   position: absolute;
-  bottom:10px;
+  bottom:15px;
   left:50%;
   transform: translateX(-50%);
   outline:5px solid #fff;
   z-index:3;
   box-shadow:0 -5px 8px rgba(0,0,0,0.5);
+  font-size:14px
 }
 nav > ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding:10px 4rem;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 nav > ul > li > a {
@@ -100,12 +104,13 @@ nav > ul > li > a {
   gap:8px;
 }
 
-nav > ul > li:nth-child(1) > a > img { width:32px;}
+nav > ul > li:nth-child(1) > a > img { width:30px;}
 nav > ul > li:nth-child(2) > a > img { width:24px;}
+nav > ul > li:nth-child(3) > a > img { width:27px;}
 nav > ul > li:nth-child(4) {
   opacity: 0;
 }
-nav > ul > li:nth-child(5) > a > img { width:28px;}
+nav > ul > li:nth-child(5) > a > img { width:26px;}
 nav > ul > li:nth-child(6) > a > img { width:24px;}
 
 
@@ -119,6 +124,9 @@ nav > ul > li:nth-child(6) > a > img { width:24px;}
 
 /* 메인 섹션 */
 
+.blackbox {
+  background-color: #2C292F;
+}
 .whitebox {
   background-color: #fff;
 }
@@ -128,11 +136,12 @@ nav > ul > li:nth-child(6) > a > img { width:24px;}
 }
 
 section {
-  padding:28px 12px;
+  padding:20px 12px;
 }
 
 .ad {
   text-align: center;
+  padding:36px 0;
 }
 
 .ad img {
@@ -146,14 +155,14 @@ section {
 
 /* 카드 공용 */
 h4 {
-  font-size:20px;
+  font-size:16px;
   font-weight: 800;
   line-height: 1.3;
   margin-bottom: 2px;
 }
 
 .cardWrap {
-  margin:28px 0;
+  margin:20px 0;
   display: flex;
   gap:12px;
   flex-wrap: nowrap;
@@ -163,11 +172,11 @@ h4 {
 .boxBtn {
   display: inline-block;
   background-color: #5B35C5;
-  padding:10px 16px;
+  padding:9px 16px;
   border-radius: 8px;
   color:#fff;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 600;
+  font-size: 13px;
   margin-top: 20px;
 }
 
@@ -177,16 +186,14 @@ h4 {
 }
 .boxoffice a {
   color:#A3A1A5;
-  font-size: 16px;
+  font-size: 12px;
   display: inline-block;
   margin-left: 10px;
 }
 
-
-
 .boxCard {
-  flex-basis: 200px;
-  height: 400px;
+  flex-basis: 160px;
+  height: 320px;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -196,7 +203,7 @@ h4 {
 }
 
 .boxCard_img {
-  flex:2.5;
+  flex:3;
   overflow: hidden;
 }
 
@@ -208,15 +215,14 @@ h4 {
 
 .boxCard_txt {
   flex:1;
-  padding:20px 12px;
+  padding:12px;
   background-color: #fff;
 }
-
-
 
 .boxCard_txt p {
   font-weight: 600;
   line-height: 1.3;
+  font-size:13px;
 }
 
 .boxCard_txt p > span:before {
@@ -233,9 +239,9 @@ h4 {
 
 .greetingCard {
   display: flex;
-  flex-basis: 400px;
+  flex-basis: 320px;
   border-radius: 12px;
-  height: 220px;
+  height: 180px;
   flex-shrink: 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   overflow: hidden;
@@ -255,15 +261,168 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding:24px;
+  padding:20px 12px;
 }
 
 .greetingCard_txt span {
-  font-size:18px;
+  font-size:14px;
   color:#793AFF;
   font-weight: 900;
 }
 
+/* 이벤트 */
+.event_nav {
+  margin:18px 0;
+  display: flex;
+  gap:12px;
+}
+.event_nav li {
+  font-size:15px;
+}
+
+.pick { 
+  font-weight: 700; 
+  color:#111;
+  border-bottom: 2px solid #111;
+}
+
+.event_cardWrap {
+  display: flex;
+  gap:12px
+}
+
+.event_card {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  width: 220px;
+  color:#fff;
+  font-size:15px;
+  font-weight: 300;
+}
+
+.event_card img {
+  border-radius: 8px;
+}
+
+
+/* 무비 피드 */
+.moviefeed img {
+  margin: 20px 0 12px;
+  width: 100%;
+  border-radius: 12px;
+}
+.konshu_wrap {
+  display: flex;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.konshu_img {
+  flex:1;
+  background: url('../img/movie2.jpg') no-repeat center/ cover;
+}
+.konshu_txt {
+  flex:2;
+  background-color: #fff;
+  padding:20px 12px;
+}
+.konshu_txt h5 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+.konshu_txt p {
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+}
+
+/* 무비 포스트 */
+
+.moviePost h2 {
+  margin-bottom: 20px;
+}
+.moviePost > p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+}
+
+.moviepost_cardWrap {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.moviepost_card {
+  background-color:rgba(145, 127, 182,0.4);
+  width: 100%;
+  height: 100px;
+  border-radius: 15px;
+  padding:12px;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.moviepost_cardImg {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink:0;
+}
+.moviepost_cardImg img {
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+}
+.moviepost_cardTxt {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  color:#fff;
+  position: relative;
+}
+.postId {
+  color:#eee;
+  font-size: 10px;
+}
+
+.postTitle {
+  font-size:14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin: 10px 0 6px;
+}
+
+.postTxt {
+  font-size: 12px;
+  letter-spacing: -0.33px;
+}
+
+.postGood {
+  position: absolute;
+  top:0;
+  right: 0;
+  font-size: 12px;
+}
+
+.postGood:before {
+  display: inline-block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background:url('../img/good.png') no-repeat center / contain;
+  margin-right: 6px;
+  transform: translateY(2px);
+}
+
+.postGood:hover {
+  opacity: 0.5;
+}
 
 /* 푸터 */
 
@@ -271,6 +430,41 @@ footer {
   background-color: #E2E1E5;
   border-radius: 20px 20px 0 0;
   color:#545255;
-  padding:40px 20px;
-  height: 500px;
+  padding:40px 20px 80px;
+
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin-bottom: 28px;
+}
+.linebreak {
+  flex-basis: 100%;
+}
+
+.footer_top img {
+  width: 109px;
+  height: 36px;
+}
+
+.footer_top ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  justify-content: end;
+  letter-spacing: -0.85px;
+  gap:8px;
+}
+
+.footer_top strong {
+  font-weight: 600;
+}
+
+.footer_btm {
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  margin-bottom: 60px;
 }
