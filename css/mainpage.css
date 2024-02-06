@@ -21,7 +21,7 @@ header {
   background-color: #793AFF;
   color:#fff;
   font-weight: 800;
-  font-size: 14px;
+  font-size: 12px;
   padding:3px 7px;
   border-radius: 5px;
   right: -5px;
@@ -30,6 +30,9 @@ header {
 
 header a:first-child {
   position: relative;
+}
+header a:first-child img {
+  height: 20px;
 }
 
 header h1 {
@@ -40,14 +43,14 @@ header h1 {
 }
 
 header img {
-  height: 25px;
+  height: 20px;
 }
 .rightNav a {
   display: inline-block;
-  margin-left:10px;
+  margin-left:8px;
 }
 .rightNav a:last-child img {
-  height: 20px;
+  height: 16px;
 }
 
 /* 네비게이션 */
@@ -64,7 +67,7 @@ nav {
   max-width: 640px;
   min-width: 300px;
   box-shadow: 0 0 5px rgba(0,0,0,0.5);
-  z-index:2
+  z-index:2;
 }
 
 .circle {
@@ -108,7 +111,7 @@ nav > ul > li:nth-child(6) > a > img { width:24px;}
 
 /* 비쥬얼 */
 #visual {
-  height: 300px;
+  height: 200px;
   background: url('../img/banner1.jpg') no-repeat center / cover;
 }
 
@@ -133,9 +136,9 @@ section {
 }
 
 .ad img {
-  width: 75%;
+  width: 80%;
   border-radius: 5px;
-  height: 110px;
+  height: 80px;
   object-fit: cover;
   object-position: left;
 }
@@ -174,7 +177,7 @@ h4 {
 }
 .boxoffice a {
   color:#A3A1A5;
-  font-size: 20px;
+  font-size: 16px;
   display: inline-block;
   margin-left: 10px;
 }

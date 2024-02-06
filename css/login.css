@@ -153,4 +153,5 @@ input[type="checkbox"]:checked + label.checklabel {
 .btnWrap {
   display: flex;
   gap:6px;
+  padding-bottom:30px;
 }

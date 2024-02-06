@@ -150,3 +150,7 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked + label.checklabel {
   background-image: url('../img/checkbox1.png');
 }
+
+.bottom {
+  padding:30px;
+}
