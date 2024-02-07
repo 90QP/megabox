@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+
+/* 헤더 */
+header {
+  background-color: #29292F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 20px;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  max-width: 640px;
+  min-width: 300px;
+  z-index: 100;
+}
+
+.container {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.ticketInfo {
+  position: absolute;
+  background-color: #793AFF;
+  color:#fff;
+  font-weight: 800;
+  font-size: 12px;
+  padding:3px 7px;
+  border-radius: 5px;
+  right: -5px;
+  top:-10px;
+}
+
+header a:first-child {
+  position: relative;
+}
+header a:first-child img {
+  height: 20px;
+}
+
+header h1 {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+header img {
+  height: 20px;
+}
+.rightNav a {
+  display: inline-block;
+  margin-left:8px;
+}
+.rightNav a:last-child img {
+  height: 16px;
+}
+
+/* 네비게이션 */
+.container {
+  position: relative;
+}
+
+nav {
+  height: 70px;
+  background-color: #fff;
+  position: fixed;
+  bottom:0;
+  width:100%;
+  max-width: 640px;
+  min-width: 300px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index:2;
+  font-size:12px
+}
+
+.circle {
+  background-color: #08B6AB;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color:#fff;
+  font-weight: 700;
+  position: absolute;
+  bottom:15px;
+  left:50%;
+  transform: translateX(-50%);
+  outline:5px solid #fff;
+  z-index:3;
+  box-shadow:0 -5px 8px rgba(0,0,0,0.5);
+  font-size:14px
+}
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+nav > ul > li > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:8px;
+}
+
+nav > ul > li:nth-child(1) > a > img { width:30px;}
+nav > ul > li:nth-child(2) > a > img { width:24px;}
+nav > ul > li:nth-child(3) > a > img { width:27px;}
+nav > ul > li:nth-child(4) {
+  opacity: 0;
+}
+nav > ul > li:nth-child(5) > a > img { width:26px;}
+nav > ul > li:nth-child(6) > a > img { width:24px;}
+
+/* 메인 섹션 */
+
+main {
+  margin-top:50px;
+  background-color: #fff;
+}
+
+.blackbox {
+  background-color: #2C292F;
+  padding:20px 12px 180px;
+}
+
+.blackbox h3 {
+  font-size: 24px;
+  font-weight: 200;
+  color:#fff;
+  letter-spacing: -0.25px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.blackbox a {
+  margin-right: 8px;
+}
+.whitebox {
+  margin-top:-140px;
+  padding: 0 12px 120px;
+}
+
+.ticekting_wrap {
+  display: flex;
+  gap:12px;
+  margin-bottom: 12px;
+}
+
+.ticketing_card {
+  width: 100%;
+  background-color: #3232e2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.ticekting_wrap p {
+  margin-bottom: 20px;
+}
+
+.ticketing_card a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.card1 {
+  height: 250px;
+  background:url('../img/tcard1.jpg')no-repeat center/cover ;
+}
+
+.card2 {
+  height: 250px;
+  background:url('../img/tcard2.jpg')no-repeat center/cover;
+}
+
+.card3 {
+  background:url('../img/tcard3.png')no-repeat center /cover;
+  text-align: right;
+}
+.card3 p {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.gra {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
+  padding: 20px;
+}
+
+.graV {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
+  padding: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.4;
+  letter-spacing: -0.75px;
+  margin-bottom: 10px;
+}
+main p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ticekting_wrap img {
+  width: 26px;
+}
+
+.card3 img {
+  height: 22px;
+}

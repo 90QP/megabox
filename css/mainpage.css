@@ -191,7 +191,7 @@ h4 {
 }
 .boxoffice a {
   color:#A3A1A5;
-  font-size: 12px;
+  font-size: 15px;
   display: inline-block;
   margin-left: 10px;
 }
@@ -344,8 +344,24 @@ h4 {
 
 /* 무비 포스트 */
 
-.moviePost h2 {
+.moviePost_tWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
   margin-bottom: 20px;
+}
+.moviePost_tWrap a {
+  display: inline-block;
+  font-size: 12px;
+}
+.moviePost_tWrap a:after {
+  display: inline-block;
+  content: "";
+  width: 8px;
+  height: 10px;
+  background: url('../img/arrow-right.png')no-repeat center / contain;
+  margin-left:5px;
 }
 .moviePost > p {
   font-size: 15px;
