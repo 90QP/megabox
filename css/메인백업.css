@@ -173,6 +173,12 @@ h4 {
   margin-bottom: 2px;
 }
 
+.cardWrap {
+  margin:20px 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
 .boxBtn {
   display: inline-block;
   background-color: #5B35C5;
@@ -194,11 +200,9 @@ h4 {
   display: inline-block;
   margin-left: 10px;
 }
-.cardWrap {
-  padding:20px 0;
-}
 
 .boxCard {
+  flex-basis: 160px;
   height: 320px;
   border-radius: 12px;
   display: flex;
@@ -262,6 +266,7 @@ h4 {
 /* 시사회-무대인사 */
 .greetingCard {
   display: flex;
+  flex-basis: 320px;
   border-radius: 12px;
   height: 180px;
   flex-shrink: 0;

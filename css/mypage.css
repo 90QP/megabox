@@ -1,0 +1,375 @@
+@charset "UTF-8";
+
+
+/* 헤더 */
+header {
+  background-color: #29292F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 20px;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  max-width: 640px;
+  min-width: 300px;
+  z-index: 100;
+}
+
+.container {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.ticketInfo {
+  position: absolute;
+  background-color: #793AFF;
+  color:#fff;
+  font-weight: 800;
+  font-size: 12px;
+  padding:3px 7px;
+  border-radius: 5px;
+  right: -5px;
+  top:-10px;
+}
+
+header a:first-child {
+  position: relative;
+}
+header a:first-child img {
+  height: 20px;
+}
+
+header h1 {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+header img {
+  height: 20px;
+}
+.rightNav a {
+  display: inline-block;
+  margin-left:8px;
+}
+.rightNav a:last-child img {
+  height: 16px;
+}
+
+/* 네비게이션 */
+.container {
+  position: relative;
+}
+
+nav {
+  height: 70px;
+  background-color: #fff;
+  position: fixed;
+  bottom:0;
+  width:100%;
+  max-width: 640px;
+  min-width: 300px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index:2;
+  font-size:12px
+}
+
+.circle {
+  background-color: #5B35C5;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color:#fff;
+  font-weight: 700;
+  position: absolute;
+  bottom:15px;
+  left:50%;
+  transform: translateX(-50%);
+  outline:5px solid #fff;
+  z-index:3;
+  box-shadow:0 -5px 8px rgba(0,0,0,0.5);
+  font-size:14px
+}
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+nav > ul > li > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:8px;
+}
+
+nav > ul > li:nth-child(1) > a > img { width:30px;}
+nav > ul > li:nth-child(2) > a > img { width:24px;}
+nav > ul > li:nth-child(3) > a > img { width:27px;}
+nav > ul > li:nth-child(4) {
+  opacity: 0;
+}
+nav > ul > li:nth-child(5) > a > img { width:26px;}
+nav > ul > li:nth-child(6) > a > img { width:24px;}
+
+
+/* 메인 섹션 */
+
+main {
+  background-color: #2C292F;
+  padding:80px 0 0;
+  font-size: 15px;
+}
+.mypage_wrap {
+  background-color: #fff;
+  border-radius: 35px 35px 0 0;
+  padding: 20px 12px;
+}
+
+/* 개인정보 */
+
+.welcomBox {
+  padding:20px 10px 10px 20px;
+}
+
+.welcomBox h3 {
+  font-size: 20px;
+  letter-spacing: -0.33px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.welcomBox strong {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.welcomBox a {
+  letter-spacing: -0.25px;
+}
+.point_box {
+  text-align: right;
+  margin-top:10px;
+}
+.point_box p {
+  font-size:16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+
+/* 이번 달 등급*/
+.monthClass p {
+  font-size: 16px;
+  letter-spacing: -0.33px;
+}
+.monthClass > strong {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.25px;
+  display: inline-block;
+  margin: 5px 0 10px;
+}
+
+.classBar {
+  background-color: #F2F2F2;
+  width: 100%;
+  height: 22px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 6px;
+  font-size: 11px;
+  color:#4b4b4b;
+  margin-bottom: 36px;
+}
+
+.classCC {
+  background-color: #fff;
+  width: 14px; height: 14px;
+  border-radius: 50%;
+  position: relative;
+}
+.classCC span {
+  position: absolute;
+  bottom:-18px;
+}
+
+.current {
+  box-shadow:0 0 1px 3px #7649F5 inset;
+}
+
+.VIPlounge {
+  border:none;
+  outline: none;
+  background: linear-gradient(90deg, rgba(79,192,255,1) 0%, rgba(34,53,217,1) 35%, rgba(137,82,255,1) 100%);
+  cursor: pointer;
+  margin:20px auto;
+  display: block;
+  border-radius: 10px;
+  color:#fff;
+  font-weight: 600;
+  font-size: 18px;
+  padding:10px 80px;
+  letter-spacing: -0.33px;
+}
+
+.specialM {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: -0.33px;
+  
+}
+
+/* 티켓 소유 현황 */
+.ticket_wrap {
+  padding:5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ticket_card {
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  gap:10px
+}
+.ticket_card img {
+  width: 35px;
+}
+
+.ticket_card p {
+  font-size: 14px;
+  letter-spacing: -0.33px;
+  color:#474747;
+}
+
+.ticket_card strong {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111;
+}
+
+/* AI 추천 영화 */
+.aipick_wrap {
+  display: flex;
+  gap:8px;
+}
+.aipick_card {
+  flex: 1;
+  text-align: center;
+  letter-spacing: -0.25px;
+  
+}
+
+.aipick_img {
+  width: 100%;
+  height: 160px;
+  background:no-repeat center / cover;
+  margin-bottom: 6px;
+  position: relative;
+}
+
+.img1 {
+  background-image: url('../img/poster1.jpg');
+}
+.img2 {
+  background-image: url('../img/poster9.jpg');
+}
+.img3 {
+  background-image: url('../img/poster3.jpg');
+}
+
+/* 그 아래 */
+.title_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.title_wrap a {
+  font-size: 14px;
+}
+
+.history p {
+  color:#747474;
+  letter-spacing: -0.25px;
+}
+
+.aipick_class {
+  position: absolute;
+  bottom:5px;
+  right: 5px;
+  width: 22px;
+}
+
+.qna li {
+  padding: 10px;
+}
+
+.qna ul {
+  padding-bottom: 10px;
+}
+
+@media (min-width:500px) {
+  .aipick_img {
+    height: 250px;
+  }
+  .aipick_class {
+    width: 32px;
+  }
+}
+
+h2 { 
+  margin-bottom: 20px;
+}
+
+/* 푸터 */
+
+footer {
+  background-color: #E2E1E5;
+  border-radius: 20px 20px 0 0;
+  color:#545255;
+  padding:40px 20px 80px;
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin-bottom: 28px;
+}
+.linebreak {
+  flex-basis: 100%;
+}
+
+.footer_top img {
+  width: 109px;
+  height: 36px;
+}
+
+.footer_top ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  justify-content: end;
+  letter-spacing: -0.85px;
+  gap:8px;
+}
+
+.footer_top strong {
+  font-weight: 600;
+}
+
+.footer_btm {
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: -0.5px;
+  margin-bottom: 60px;
+}

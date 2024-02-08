@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/mainpage.css">
+  <link rel="stylesheet" href="css/mypage.css">
   <script src="js/main.js" defer></script>
   <title>M E G A B O X</title>
 </head>
@@ -55,15 +55,142 @@
         </li>
         <li>
           <a href="mypage.html">
-            <img src="img/my_icon.png" alt="마이페이지">
-            <span>MY</span>
+            <img src="img/my_icon_select.png" alt="마이페이지">
+            <span class="purple3">MY</span>
           </a>
         </li>
     </ul>
     </nav>
+
     <main>
+      <div class="mypage_wrap">
+        <div class="welcomBox">
+          <h3><strong>홍길동</strong>님, 환영합니다!</h3>
+          <a href="#" class="arrow_right gray5">개인 정보 수정</a>
+          <div class="point_box">
+            <p>나의 메가박스 포인트</p>
+            <strong>3,150P</strong>
+          </div>
+          
+        </div>
+        <hr class="mainhr">
+
+        <div class="monthClass">
+          <p>이번 달 등급</p>
+          <strong class="purple3">WELCOME</strong>
+          <div class="classBar">
+            <div class="classCC current">
+              <span>Welcome</span>
+            </div>
+            <div class="classCC">
+              <span>Friends</span>
+            </div>
+            <div class="classCC">
+              <span>VIP</span>
+            </div>
+            <div class="classCC">
+              <span>VVIP</span>
+            </div>
+            <div class="classCC">
+              <span>MVP</span>
+            </div>
+          </div>
+          <button class="VIPlounge">VIP LOUNGE</button>
+          <div class="specialM">
+            <p>스페셜 멤버십</p>
+            <span class="gray5">가입된 멤버십이 없습니다.</span>
+          </div>
+          
+        </div>
+        <hr class="mainhr">
+
+        <div class="mypage_ticket">
+          <div class="ticket_wrap">
+            <a href="#" class="ticket_card">
+              <img src="img/ticket_mypage.png" alt="티켓">
+              <p>영화관람권</p>
+              <strong>0</strong>
+            </a>
+            <a href="#" class="ticket_card">
+              <img src="img/ticket_mypage.png" alt="티켓">
+              <p>스토어교환권</p>
+              <strong>0</strong>
+            </a>
+            <a href="#" class="ticket_card">
+              <img src="img/ticket_mypage.png" alt="티켓">
+              <p>메가박스 쿠폰</p>
+              <strong>2</strong>
+            </a>
+            <a href="#" class="ticket_card">
+              <img src="img/ticket_mypage.png" alt="티켓">
+              <p>기프트카드</p>
+              <strong>1</strong>
+            </a>
+          </div>
+        </div>
+        <hr class="mainhr">
+
+        <div class="aipick">
+          <h2 class="title">AI Pick! 추천 영화</h2>
+          <div class="aipick_wrap">
+            <div class="aipick_card">
+              <div class="aipick_img img1">
+                <img src="img/ALL_46x46.png" alt="전체이용가" class="aipick_class"></div>
+              <p>웡카</p>
+            </div>
+            <div class="aipick_card">
+              <div class="aipick_img img2"><img src="img/ALL_46x46.png" alt="전체이용가" class="aipick_class"></div>
+              <p>위시</p>
+            </div>
+            <div class="aipick_card">
+              <div class="aipick_img img3"><img src="img/12_46x46.png" alt="12세 이용가" class="aipick_class"></div>
+              <p>도그데이즈</p>
+            </div>
+          </div>
+        </div>
+        <hr class="mainhr">
+
+        <div class="history">
+          <div class="title_wrap">
+            <h2 class="title">예매/구매 내역</h2>
+            <a href="#" class="gray5 arrow_right">전체 내역 보기</a>
+          </div>
+          <p>최근 7일간 구매한 내역이 없습니다.</p>
+        </div>
+        <hr class="mainhr">
+
+        <div class="history">
+          <div class="title_wrap">
+            <h2 class="title">자주 찾는 극장 & 장르</h2>
+            <a href="#" class="gray5 arrow_right">설정하기</a>
+          </div>
+          <p>선호장르와 시간을 설정하면 맞춤 안내를 해드려요!</p>
+        </div>
+        <hr class="mainhr">
+
+        <div class="qna">
+          <h2 class="title">고객문의</h2>
+          <ul>
+            <li><a href="#" class="title_wrap">
+              <span>할인정보 및 단체/대관문의</span>
+              <span class="arrow_right"></span>
+            </a></li>
+            <li><a href="#" class="title_wrap">
+              <span>1:1 고객 센터</span>
+              <span class="arrow_right"></span>
+            </a></li>
+            <li><a href="#" class="title_wrap">
+              <span>설정</span>
+              <span class="arrow_right"></span>
+            </a></li>
+          </ul>
+        </div>
+
+
+
+      </div>
     </main>
-    <div class="blackbox">
+
       <footer>
         <div class="footer_top">
           <img src="img/logo-opacity_new2.png" alt="푸터로고">
@@ -87,7 +214,6 @@
             
         </div>
       </footer>
-    </div>
   </div>
 </body>
 </html>

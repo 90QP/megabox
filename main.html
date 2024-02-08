@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/mainpage.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/main.js" defer></script>
   <title>M E G A B O X</title>
 </head>
@@ -25,8 +27,8 @@
       <ul>
         <li>
           <a href="main.html">
-            <img src="img/home_icon.png" alt="홈으로">
-            <span>홈</span>
+            <img src="img/home_icon_select.png" alt="홈으로">
+            <span class="purple3">홈</span>
           </a>
         </li>
         <li>
@@ -61,9 +63,36 @@
         </li>
     </ul>
     </nav>
-    <div id="visual">
-
+    <div id="visual" class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="img/banner1.jpg" alt="배너">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/banner2.jpg" alt="배너">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/banner3.jpg" alt="배너">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/banner4.jpg" alt="배너">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/banner5.jpg" alt="배너">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/banner6.jpg" alt="배너">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/banner7.jpg" alt="배너">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/banner8.jpg" alt="배너">
+        </div>
+      </div>
     </div>
+
     <main>
       <div class="whitebox">
         <section>
@@ -72,81 +101,166 @@
             <a href="#">#상영예정</a>
             <a href="#">#단독</a>
           </div>
-          <div class="cardWrap">
-            <article class="boxCard">
-              <div class="boxCard_img">
-                <img src="img/poster1.jpg" alt="">
+          <div class="swiper boxoffice_swiper">
+            <div class="swiper-wrapper cardWrap">
+              <div class="boxCard swiper-slide">
+                <div class="boxCard_img">
+                  <img src="img/poster1.jpg" alt="">
+                </div>
+                <div class="boxCard_txt">
+                  <h4>웡카</h4>
+                  <p class="gray5">예매율 50.2%<span>8.9</span></p>
+                  <a href="#" class="boxBtn">바로 예매</a>
+                </div>
               </div>
-              <div class="boxCard_txt">
-                <h4>웡카</h4>
-                <p class="gray5">예매율 50.2%<span>8.9</span></p>
-                <a href="#" class="boxBtn">바로 예매</a>
+              <div class="boxCard swiper-slide">
+                <div class="boxCard_img">
+                  <img src="img/poster2.jpg" alt="">
+                </div>
+                <div class="boxCard_txt">
+                  <h4>시민덕희</h4>
+                  <p class="gray5">예매율 8.4%<span>8.7</span></p>
+                  <a href="#" class="boxBtn">바로 예매</a>
+                </div>
               </div>
-            </article>
-            <article class="boxCard">
-              <div class="boxCard_img">
-                <img src="img/poster2.jpg" alt="">
+              <div class="boxCard swiper-slide">
+                <div class="boxCard_img">
+                  <img src="img/poster3.jpg" alt="">
+                </div>
+                <div class="boxCard_txt">
+                  <h4>도그데이즈</h4>
+                  <p class="gray5">예매율 8.2%<span>9.1</span></p>
+                  <a href="#" class="boxBtn">바로 예매</a>
+                </div>
               </div>
-              <div class="boxCard_txt">
-                <h4>시민덕희</h4>
-                <p class="gray5">예매율 8.4%<span>8.7</span></p>
-                <a href="#" class="boxBtn">바로 예매</a>
+              <div class="boxCard swiper-slide">
+                <div class="boxCard_img">
+                  <img src="img/poster4.jpg" alt="">
+                </div>
+                <div class="boxCard_txt">
+                  <h4>데드맨</h4>
+                  <p class="gray5">예매율 8.3%<span>8</span></p>
+                  <a href="#" class="boxBtn">바로 예매</a>
+                </div>
               </div>
-            </article>
-            <article class="boxCard">
-              <div class="boxCard_img">
-                <img src="img/poster3.jpg" alt="">
+              <div class="boxCard swiper-slide">
+                <div class="boxCard_img">
+                  <img src="img/poster5.jpg" alt="">
+                </div>
+                <div class="boxCard_txt">
+                  <h4>소풍</h4>
+                  <p class="gray5">예매율 3.6%<span>9.2</span></p>
+                  <a href="#" class="boxBtn">바로 예매</a>
+                </div>
               </div>
-              <div class="boxCard_txt">
-                <h4>도그데이즈</h4>
-                <p class="gray5">예매율 8.2%<span>9.1</span></p>
-                <a href="#" class="boxBtn">바로 예매</a>
+              <div class="boxCard swiper-slide">
+                <div class="boxCard_img">
+                  <img src="img/poster6.jpg" alt="">
+                </div>
+                <div class="boxCard_txt">
+                  <h4>괴물</h4>
+                  <p class="gray5">예매율 8%<span>9</span></p>
+                  <a href="#" class="boxBtn">바로 예매</a>
+                </div>
               </div>
-            </article>
-            <article class="boxCard">
-              <div class="boxCard_img">
-                <img src="img/poster4.jpg" alt="">
+              <div class="boxCard swiper-slide">
+                <div class="boxCard_img">
+                  <img src="img/poster7.jpg" alt="">
+                </div>
+                <div class="boxCard_txt">
+                  <h4>외계+인 2부</h4>
+                  <p class="gray5">예매율 1.7%<span>8.7</span></p>
+                  <a href="#" class="boxBtn">바로 예매</a>
+                </div>
               </div>
-              <div class="boxCard_txt">
-                <h4>데드맨</h4>
-                <p class="gray5">예매율 8.3%<span>8</span></p>
-                <a href="#" class="boxBtn">바로 예매</a>
+              <div class="boxCard swiper-slide">
+                <div class="boxCard_img">
+                  <img src="img/poster8.jpg" alt="">
+                </div>
+                <div class="boxCard_txt">
+                  <h4>서울의 봄</h4>
+                  <p class="gray5">예매율 1%<span>9.6</span></p>
+                  <a href="#" class="boxBtn">바로 예매</a>
+                </div>
               </div>
-            </article>
+              <div class="boxCard swiper-slide">
+                <div class="boxCard_img">
+                  <img src="img/poster9.jpg" alt="">
+                </div>
+                <div class="boxCard_txt">
+                  <h4>위시</h4>
+                  <p class="gray5">예매율 0.8%<span>8.3</span></p>
+                  <a href="#" class="boxBtn">바로 예매</a>
+                </div>
+              </div>
+              <div class="boxCard swiper-slide">
+                <div class="boxCard_img">
+                  <img src="img/poster10.jpg" alt="">
+                </div>
+                <div class="boxCard_txt">
+                  <h4>노량: 죽음의 바다</h4>
+                  <p class="gray5">예매율 0.2%<span>8.9</span></p>
+                  <a href="#" class="boxBtn">바로 예매</a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="boxCard_more">
+                  <a href="moremovie.html">
+                  <img src="img/more_icon.png" alt="더보기">
+                  더보기
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
           <a href="moremovie.html" class="arrowR gray5 contentP1">더 많은 영화보기</a>
         </section>
         <hr class="mainhr">
+
         <section>
         <h2 class="title">시사회/무대인사</h2>
-        <div class="cardWrap">
-          <article class="greetingCard">
-            <div class="greetingCard_img">
-            </div>
-            <div class="greetingCard_txt">
-              <span>무대인사</span>
-              <h4>도그데이즈<br>개봉주 무대인사</h4>
-              <div class="greetBtns">
-                <a href="#" class="boxBtn">영화 상세</a>
-                <a href="#" class="boxBtn">일정보기</a>
+        <div class="swiper greeting_swiper">
+          <div class="cardWrap swiper-wrapper">
+            <div class="greetingCard swiper-slide">
+              <div class="greetingCard_img">
               </div>
-              
-            </div>
-          </article>
-          <article class="greetingCard">
-            <div class="greetingCard_img">
-            </div>
-            <div class="greetingCard_txt">
-              <span>무대인사 & 시사회</span>
-              <h4>시민덕희
-                <br>개봉 2주차 무대인사</h4>
-              <div class="greetBtns">
-                <a href="#" class="boxBtn">영화 상세</a>
-                <a href="#" class="boxBtn">일정보기</a>
+              <div class="greetingCard_txt">
+                <span>무대인사</span>
+                <h4>도그데이즈<br>개봉주 무대인사</h4>
+                <div class="greetBtns">
+                  <a href="#" class="boxBtn">영화 상세</a>
+                  <a href="#" class="boxBtn">일정보기</a>
+                </div>
               </div>
-              
             </div>
-          </article>
+            <div class="greetingCard swiper-slide">
+              <div class="greetingCard_img">
+              </div>
+              <div class="greetingCard_txt">
+                <span>무대인사 & 시사회</span>
+                <h4>시민덕희
+                  <br>개봉 2주차 무대인사</h4>
+                <div class="greetBtns">
+                  <a href="#" class="boxBtn">영화 상세</a>
+                  <a href="#" class="boxBtn">일정보기</a>
+                </div>
+              </div>
+            </div>
+            <div class="greetingCard swiper-slide">
+              <div class="greetingCard_img">
+              </div>
+              <div class="greetingCard_txt">
+                <span>무대인사</span>
+                <h4>아기상어 극장판: 사이렌<br>
+                  스톤의 비밀<br>
+                  개봉기념 무대인사</h4>
+                <div class="greetBtns">
+                  <a href="#" class="boxBtn">영화 상세</a>
+                  <a href="#" class="boxBtn">일정보기</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         </section>
         <hr class="mainhr">
@@ -161,22 +275,25 @@
             <li><a href="#">제휴/할인</a></li>
             <li><a href="#">시사회/무대인사</a></li>
           </ul>
-          <div class="event_cardWrap">
-              <div class="event_card">
-              <img src="img/event1.jpg" alt="이벤트1">
-              <span>2024.02.08 - 2024.02.29</span>
-            </div>
-            <div class="event_card">
-              <img src="img/event2.jpg" alt="이벤트1">
-              <span>2024.02.08 - 2024.02.29</span>
-            </div>
-            <div class="event_card">
-              <img src="img/event3.jpg" alt="이벤트1">
-              <span>2024.02.08 - 2024.02.29</span>
-            </div>
-            <div class="event_card">
-              <img src="img/event4.jpg" alt="이벤트1">
-              <span>2024.02.08 - 2024.02.29</span>
+
+          <div class="swiper event_swiper">
+            <div class="event_cardWrap swiper-wrapper">
+                <div class="event_card swiper-slide">
+                  <img src="img/event1.jpg" alt="이벤트1">
+                  <span>2024.02.08 - 2024.02.29</span>
+                </div>
+              <div class="event_card swiper-slide">
+                <img src="img/event2.jpg" alt="이벤트1">
+                <span>2024.02.08 - 2024.02.29</span>
+              </div>
+              <div class="event_card swiper-slide">
+                <img src="img/event3.jpg" alt="이벤트1">
+                <span>2024.02.08 - 2024.02.29</span>
+              </div>
+              <div class="event_card swiper-slide">
+                <img src="img/event4.jpg" alt="이벤트1">
+                <span>2024.02.08 - 2024.02.29</span>
+              </div>
             </div>
           </div>
           
